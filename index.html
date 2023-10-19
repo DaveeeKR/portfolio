@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,18 +17,42 @@
     />
   </head>
   <body>
-    <div class="nav">
-      <div class="logo">
-        <a class="xd" href="/index.html">Dawid Krawczyk</a>
+    <div class="chuj">
+      <div class="nav">
+        <div class="logo">
+          <a class="xd" href="/index.html">dawid krawczyk</a>
+        </div>
+        <div>
+          <input type="checkbox" id="menu-bar" />
+          <label for="menu-bar" class="xd">Menu</label>
+        </div>
+        <nav class="navbar">
+          <a class="xd" href="./podstrony/omnie.html">o mnie</a>
+          <a href="./podstrony/projekty.html" class="xd">projekty</a>
+          <a class="xd" href="./podstrony/kontakt.html">kontakt</a>
+        </nav>
       </div>
-      <nav>
-        <a href="./index.html" class="xd">strona główna</a>
-        <a class="xd" href="./podstrony/omnie.html">o mnie</a>
-        <a class="xd" href="./podstrony/kontakt.html">kontakt</a>
-      </nav>
-    </div>
-    <div class="txt">
-      <img src="" alt="" />
+      <div class="txt">
+        <div class="img">
+          <img src="./img/Nowy projekt (7).png" alt="twoj stary pijany" />
+        </div>
+        <div class="opis">
+          <h2>Cześć jestem</h2>
+          <h1>Dawid Krawczyk</h1>
+          <h2>Młodszy specjalista ds. IT</h2>
+          <div id="xd">
+            <a href="https://github.com/DaveeeKR" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/daveekr/" target="_blank"
+              ><i class="fa fa-linkedin-square"></i
+            ></a>
+            <div id="cv">
+              <a href="./cv/cv.pdf" target="_blank">Moje CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
