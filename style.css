@@ -8,16 +8,16 @@ html {
 }
 
 .chuj {
-  background: linear-gradient(85deg, #0d1117, #222d3f);
-  width: 100%;
-  height: 100%;
+  background: linear-gradient(85deg, #0a0d11, #31415c);
+  width: 100vw;
+  height: 100vh;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   margin-right: 10%;
-  padding: 30px;
+  padding: 2rem;
 }
 
 .nav:first-child {
@@ -29,7 +29,7 @@ html {
   font-family: "Bebas Neue", sans-serif;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 2.3rem;
   text-transform: capitalize;
   padding: 20px;
 }
@@ -67,43 +67,24 @@ label.xd {
   display: none;
 }
 
-@media (max-width: 1080px) {
-  div.nav {
-    padding: 0px;
-  }
-  div label.xd {
-    display: initial;
-  }
-  div nav.navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    border-top: 1px solid black;
-  }
-  div nav a {
-    width: 100%;
-  }
-
-  #menu-bar:checked ~ .navbar {
-    display: initial;
-  }
-}
-
 .txt {
   display: flex;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  /* gap: 40px; */
   margin: auto;
-  width: 50%;
   padding: 120px 0;
+  transform: scale(1.1);
 }
 
 .img {
   width: 400px;
   height: 400px;
-  border-radius: 50%;
   overflow: hidden;
+}
+
+img {
+  border-radius: 50%;
 }
 
 .opis {
@@ -154,7 +135,7 @@ h2 {
   left: 140px;
   width: 120px;
   height: 30px;
-  background: #253042;
+  background: #2f3b4e;
   margin-top: 5%;
   border: solid 1px #1d2531;
   border-radius: 12px;
@@ -188,4 +169,81 @@ h2 {
 #cv a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+@media (max-width: 1200px) {
+  .nav {
+    margin-right: 8%;
+  }
+
+  .nav:first-child {
+    margin-left: 8%;
+  }
+
+  .txt {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1080px) {
+  div.nav {
+    padding: 30px 0;
+    margin-left: 0;
+  }
+  div label.xd {
+    display: initial;
+  }
+  div nav.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid black;
+  }
+  div nav a {
+    width: 100%;
+  }
+
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}
+
+@media (max-width: 800px) {
+  .txt {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .xd {
+    padding: 0;
+    font-size: 2.137rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .txt {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    transform: scale(0.9);
+  }
+
+  .xd {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .txt {
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    transform: scale(0.8);
+  }
+
+  .xd {
+    font-size: 1.7rem;
+  }
 }
