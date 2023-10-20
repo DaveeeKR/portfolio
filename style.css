@@ -223,7 +223,7 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     transform: scale(0.9);
-    margin-top: -7.25vh;
+    margin-top: -8vh;
   }
 
   .xd {
@@ -237,7 +237,7 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     transform: scale(0.75);
-    margin-top: -14.5vh;
+    margin-top: -16vh;
   }
 
   .xd {
