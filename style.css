@@ -223,6 +223,7 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     transform: scale(0.9);
+    margin-top: -6vh;
   }
 
   .xd {
@@ -235,10 +236,11 @@ h2 {
     padding: 0;
     display: flex;
     flex-direction: column-reverse;
-    transform: scale(0.8);
+    transform: scale(0.75);
+    margin-top: -12vh;
   }
 
   .xd {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
