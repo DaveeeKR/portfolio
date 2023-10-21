@@ -169,6 +169,11 @@ h2 {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.logo > a > i {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .nav {
     margin-right: 8%;
@@ -201,6 +206,14 @@ h2 {
 
   #menu-bar:checked ~ .navbar {
     display: initial;
+  }
+
+  .logo > a > i {
+    display: initial;
+  }
+
+  .logo #hp {
+    display: none;
   }
 }
 
