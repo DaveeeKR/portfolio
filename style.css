@@ -250,7 +250,7 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     transform: scale(0.75);
-    margin-top: -15vh;
+    margin-top: -17vh;
   }
 
   .img {
