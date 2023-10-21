@@ -170,7 +170,7 @@ h2 {
   transform-origin: bottom left;
 }
 
-.logo > a > i {
+#menuxd {
   display: none;
 }
 
@@ -208,7 +208,7 @@ h2 {
     display: initial;
   }
 
-  .logo > a > i {
+  #menuxd {
     display: initial;
   }
 
