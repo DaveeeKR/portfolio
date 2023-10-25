@@ -195,16 +195,30 @@ h2 {
     position: relative;
   }
 
-  .navbar {
+  /* .navbar {
     position: absolute;
     background: rgba(255, 255, 255, 10%);
-    padding: 20px;
     display: none;
-    width: 100%;
+    margin-top: 2.5vh;
+    padding-left: 0;
+  } */
+
+  .navbar {
+    position: fixed;
+    background: linear-gradient(90deg, rgb(33, 34, 49), rgb(26, 27, 43));
+    opacity: 0.95;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: none;
   }
 
   input:checked ~ .navbar {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .navbar a.xd::after {
