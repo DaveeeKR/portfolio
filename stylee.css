@@ -73,11 +73,10 @@ input:checked ~ .navbar {
 .txt {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
   align-items: center;
   gap: 20px;
-  scale: 0.8;
-  z-index: 1;
+  scale: 0.75;
+  margin-bottom: 10vh;
 }
 
 .opis {
@@ -127,7 +126,9 @@ h1 {
 }
 
 h2 {
+  padding: 5px 0px;
   font-size: 1.5rem;
+  margin: 0;
 }
 
 #xd {
