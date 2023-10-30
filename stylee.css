@@ -76,7 +76,7 @@ input:checked ~ .navbar {
   align-items: center;
   gap: 20px;
   scale: 0.75;
-  margin-bottom: 10vh;
+  margin-top: -10vh;
 }
 
 .opis {
