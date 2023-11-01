@@ -8,7 +8,15 @@ html {
 .all {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(45deg, #787ffc, #4d56f0, #787ffc, #4d56f0);
+  background: linear-gradient(
+    45deg,
+    #0f0c29,
+    #302b63,
+    #24243e,
+    #0f0c29,
+    #302b63,
+    #24243e
+  );
   background-size: 300% 300%;
   animation: color 30s ease-in-out infinite;
 }
@@ -36,7 +44,7 @@ html {
 }
 
 .xd:hover {
-  color: #2271d8;
+  color: #3a8dfa;
   text-shadow: 0 0 10px #2271d8;
 }
 
