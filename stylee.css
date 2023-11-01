@@ -6,9 +6,23 @@ html {
 }
 
 .all {
-  background: linear-gradient(85deg, #0a0d11, #31415c);
   width: 100vw;
   height: 100vh;
+  background: linear-gradient(45deg, #787ffc, #4d56f0, #787ffc, #4d56f0);
+  background-size: 300% 300%;
+  animation: color 30s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 .xd {
@@ -195,7 +209,36 @@ h2 {
   }
 }
 
-@media (min-width: 840px) {
+@media (min-width: 900px) {
+  #expand-btn,
+  #menuxd {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    padding: 1.5rem 0.5rem;
+    scale: 0.9;
+  }
+
+  .nav:first-child {
+    margin-left: 5%;
+  }
+
+  .navbar,
+  #hp {
+    display: initial;
+  }
+
+  .navbar {
+    position: relative;
+    top: auto;
+    left: auto;
+    background: none;
+  }
+
   .txt {
     display: flex;
     flex-direction: row;
