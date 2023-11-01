@@ -22,8 +22,8 @@ html {
 }
 
 .xd:hover {
-  color: rgb(179, 216, 248);
-  text-shadow: 0 0 10px rgb(209, 230, 248);
+  color: #2271d8;
+  text-shadow: 0 0 10px #2271d8;
 }
 
 .nav {
@@ -143,10 +143,12 @@ h2 {
   color: white;
   padding: 0 10px;
   font-size: 2.137rem;
+  transition: text-shadow 0.3s, color 0.3s;
 }
 
 #xd a i:hover {
-  text-shadow: 0 0 10px rgb(103, 207, 255);
+  color: #2271d8;
+  text-shadow: 0 0 15px #2271d8;
 }
 
 #cv {
@@ -160,7 +162,7 @@ h2 {
   margin-top: 5%;
   /* border: solid 1px #1d2531; */
   border-radius: 12px;
-  transition: background 0.5s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 #cv a {
@@ -172,7 +174,7 @@ h2 {
 }
 
 #cv:hover {
-  background: linear-gradient(85deg, #2271d8, #76bdff);
+  background: #2271d8;
   box-shadow: 0 0 15px #2271d8;
 }
 
@@ -183,4 +185,23 @@ h2 {
 
 .img img {
   border-radius: 50%;
+  box-shadow: 0 0 30px #101011;
+}
+
+@media (min-width: 600px) {
+  .txt {
+    margin-top: 2vh;
+    scale: 0.9;
+  }
+}
+
+@media (min-width: 840px) {
+  .txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+    gap: 30px;
+    scale: 1;
+  }
 }
